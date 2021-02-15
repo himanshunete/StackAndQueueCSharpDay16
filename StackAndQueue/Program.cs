@@ -6,6 +6,7 @@ namespace StackAndQueue
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome to Stack");
             MyNode myFirstNode = new MyNode(70);
             MyNode mySecondNode = new MyNode(30);
