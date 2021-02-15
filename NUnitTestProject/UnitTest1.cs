@@ -31,6 +31,7 @@ namespace NUnitTestProject
         [Test]
         public void Given3NumberInStack_WhenPoped_ShouldReturnEmpty()
         {
+
             MyNode myFirstNode = new MyNode(70);
             MyNode mySecondNode = new MyNode(30);
             MyNode myThirdNode = new MyNode(56);
