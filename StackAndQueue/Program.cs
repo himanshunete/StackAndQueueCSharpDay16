@@ -3,7 +3,7 @@
 namespace StackAndQueue
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
 
@@ -16,8 +16,17 @@ namespace StackAndQueue
             myStack.push(mySecondNode);
             myStack.push(myThirdNode);
             myStack.PrintStack();
-            MyNode peak;
-            peak = myStack.Peak();
+            MyNode pop = myStack.Pop();
+            // First Element is removed
+            myStack.PrintMyNodes();
+            MyNode pop1 = myStack.Pop();
+            // Second Element is removed
+            myStack.PrintMyNodes();
+            MyNode pop2 = myStack.Pop();
+            if ( pop2.getNext() == null )
+            {
+                Console.WriteLine("Stack is empty");
+            }         
         }
     }
 }

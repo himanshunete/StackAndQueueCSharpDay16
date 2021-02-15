@@ -27,7 +27,17 @@ namespace StackAndQueue
 		public MyNode Peak()
 		{ 
 			return myLinkedList.head;
+		}
+
+		public MyNode Pop()
+		{
+			return myLinkedList.Pop();
 
 		}
+
+		public void PrintMyNodes()
+        {
+			myLinkedList.PrintMyNodes();
+        }
 	}
 }
