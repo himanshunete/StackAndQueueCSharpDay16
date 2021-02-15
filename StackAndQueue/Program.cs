@@ -12,9 +12,9 @@ namespace StackAndQueue
             MyNode mySecondNode = new MyNode(30);
             MyNode myThirdNode = new MyNode(56);
             MyStack myStack = new MyStack();
-            myStack.push(myFirstNode);
-            myStack.push(mySecondNode);
-            myStack.push(myThirdNode);
+            myStack.Push(myFirstNode);
+            myStack.Push(mySecondNode);
+            myStack.Push(myThirdNode);
             myStack.PrintStack();
             MyNode pop = myStack.Pop();
             // First Element is removed

@@ -15,9 +15,9 @@ namespace NUnitTestProject
             MyNode mySecondNode = new MyNode(30);
             MyNode myThirdNode = new MyNode(56);
             MyStack myStack = new MyStack();
-            myStack.push(myFirstNode);
-            myStack.push(mySecondNode);
-            myStack.push(myThirdNode);
+            myStack.Push(myFirstNode);
+            myStack.Push(mySecondNode);
+            myStack.Push(myThirdNode);
             myStack.PrintStack();
             MyNode peak;
             peak = myStack.Peak();
@@ -35,13 +35,32 @@ namespace NUnitTestProject
             MyNode mySecondNode = new MyNode(30);
             MyNode myThirdNode = new MyNode(56);
             MyStack myStack = new MyStack();
-            myStack.push(myFirstNode);
-            myStack.push(mySecondNode);
-            myStack.push(myThirdNode);
+            myStack.Push(myFirstNode);
+            myStack.Push(mySecondNode);
+            myStack.Push(myThirdNode);
             MyNode pop = myStack.Pop();
             MyNode pop1 = myStack.Pop();
             MyNode pop2 = myStack.Pop();
             Assert.AreEqual(null, pop2.getNext());
+        }
+        /// <summary>
+        /// TC-3 Test to check Queue
+        /// </summary>
+        [Test]
+        public void Given3Number_WhenAddedToQueue_ShouldHaveFirstAddedNode()
+        {
+            MyNode myFirstNode = new MyNode(56);
+            MyNode mySecondNode = new MyNode(30);
+            MyNode myThirdNode = new MyNode(70);
+            MyQueue myQueue = new MyQueue();
+            myQueue.Enqueue(myFirstNode);
+            myQueue.Enqueue(mySecondNode);
+            myQueue.Enqueue(myThirdNode);
+            myQueue.PrintQueue();
+            MyNode peak;
+            peak = myQueue.Peak();
+            Assert.AreEqual(myFirstNode, peak);
+
         }
     }
 }
